@@ -1,3 +1,5 @@
+package com.parse;
+
 /**
  * token enum
  *
@@ -11,7 +13,7 @@ public enum TokenType {
     /**
      *  }
      */
-    END_IBJECT(2),
+    END_OBJECT(2),
     /**
      *  [
      */
