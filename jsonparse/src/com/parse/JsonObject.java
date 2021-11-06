@@ -48,7 +48,7 @@ public class JsonObject {
 
     @Override
     public String toString() {
-        return BeautifyJsonUtils.beautify(this);
+        return "good job";
     }
 
 }
