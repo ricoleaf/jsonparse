@@ -19,4 +19,11 @@ public class Token {
         this.tokenType = tokenType;
     }
 
+    @Override
+    public String toString() {
+        return "Token{" +
+                "tokenType=" + tokenType +
+                ", value='" + value + '\'' +
+                '}';
+    }
 }

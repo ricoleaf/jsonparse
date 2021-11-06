@@ -8,7 +8,7 @@ import java.io.Reader;
  */
 public class CharReader {
 
-    private  static final int BUFFER_SIZE = 10;
+    private  static final int BUFFER_SIZE = 1024;
 
     private char[] buffer;
 
@@ -25,7 +25,7 @@ public class CharReader {
 
     public char peek() throws IOException {
         if (pos - 1 >= size) {
-            return buffer[pos - 1];
+            return (char)-1;
         }
         return buffer[Math.max(0, pos - 1)];
     }
