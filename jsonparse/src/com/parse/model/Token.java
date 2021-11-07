@@ -1,4 +1,4 @@
-package com.parse;
+package com.parse.model;
 
 public class Token {
 

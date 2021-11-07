@@ -2,6 +2,11 @@ package com.parse;
 
 
 import com.parse.Exception.JsonParseException;
+import com.parse.model.Token;
+import com.parse.model.CharReader;
+import com.parse.model.TokenList;
+import com.parse.model.TokenType;
+
 import java.io.IOException;
 
 import static com.sun.org.apache.xml.internal.utils.XMLCharacterRecognizer.isWhiteSpace;

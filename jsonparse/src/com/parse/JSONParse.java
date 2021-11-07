@@ -1,5 +1,8 @@
 package com.parse;
 
+import com.parse.model.CharReader;
+import com.parse.model.TokenList;
+
 import java.io.IOException;
 import java.io.StringReader;
 
@@ -15,13 +18,4 @@ public class JSONParse {
         return parser.parse(tokens);
     }
 
-    public static void main(String[] args) {
-        JSONParse jsonParse = new JSONParse();
-        try {
-            jsonParse.fromJSON("{\"name\":\"wangkangnian\"}");
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
 }

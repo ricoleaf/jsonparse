@@ -1,15 +1,16 @@
-package com.parse;
+package com.parse.model;
 
+import com.parse.utils.BeautifyJsonUtils;
 import com.parse.Exception.JsonParseException;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class JsonObject {
 
-    private Map<String, Object> map = new HashMap<>();
+    /**
+     *  using LinkedHashMap
+     */
+    private Map<String, Object> map = new LinkedHashMap<>();
 
     public void put(String key, Object value) {
         map.put(key, value);
@@ -48,7 +49,7 @@ public class JsonObject {
 
     @Override
     public String toString() {
-        return "good job";
+        return BeautifyJsonUtils.beautify(this);
     }
 
 }

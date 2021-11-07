@@ -1,6 +1,7 @@
 package com.parse;
 
 import com.parse.Exception.JsonParseException;
+import com.parse.model.*;
 
 public class Parser {
 
@@ -55,7 +56,7 @@ public class Parser {
                     return jsonObject;
                 case BEGIN_ARRAY:
                     checkExpectToken(tokenType, expectToken);
-                    jsonObject.put(key, parseJsonObject());
+                    jsonObject.put(key, parseJsonArray());
                     expectToken = SEP_COMMA_TOKEN | END_OBJECT_TOKEN;
                     break;
                 case NULL:

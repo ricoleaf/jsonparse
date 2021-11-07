@@ -1,6 +1,6 @@
-package com.parse;
+package com.parse.model;
 
-import com.parse.Token;
+import com.parse.model.Token;
 
 import java.util.ArrayList;
 import java.util.List;

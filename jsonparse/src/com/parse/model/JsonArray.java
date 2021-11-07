@@ -1,5 +1,6 @@
-package com.parse;
+package com.parse.model;
 
+import com.parse.utils.BeautifyJsonUtils;
 import com.parse.Exception.JsonTypeException;
 
 import java.util.ArrayList;

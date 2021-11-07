@@ -1,4 +1,4 @@
-package com.parse;
+package com.parse.model;
 
 /**
  * token enum
@@ -35,7 +35,7 @@ public enum TokenType {
      */
     STRING(64),
     /**
-     * boolean
+     *  boolean
      */
     BOOLEAN(128),
     /**
